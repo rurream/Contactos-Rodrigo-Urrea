@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cl.creative_it_spa.contactos.Confirmar_datos">
+
+    <include
+        android:id="@+id/barra_confirmar_datos"
+        layout="@layout/barra"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margen"
+        android:paddingRight="@dimen/margen"
+        android:paddingTop="@dimen/margen"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_nombre">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/Nombre"
+                android:paddingLeft="@dimen/margen"
+                android:textColor="@color/color_negro"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_fecha">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/Fecha_nacimiento"
+                android:paddingLeft="@dimen/margen"
+                android:textColor="@color/color_negro"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_tel">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/Telefono"
+                android:paddingLeft="@dimen/margen"
+                android:textColor="@color/color_negro"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_mail">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/Mail"
+                android:paddingLeft="@dimen/margen"
+                android:textColor="@color/color_negro"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_descrip">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_descrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/Descip_Contacto"
+                android:paddingLeft="@dimen/margen"
+                android:textColor="@color/color_negro"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/bt_aditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margen_top_bt_editar"
+            android:paddingLeft="@dimen/margen_confirm"
+            android:paddingRight="@dimen/margen_confirm"
+            android:text="@string/Editar_contacto"
+            android:textColor="@color/color_negro"
+            android:textStyle="bold"
+            android:theme="@style/BotonRised" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
